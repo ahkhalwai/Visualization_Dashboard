@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualization Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Visualization Dashboard</h1>
+    <div id="filters">
+        <label for="sector">Sector:</label>
+        <select id="sector">
+            <option value="">All</option>
+            <option value="Energy">Energy</option>
+            <option value="Healthcare">Healthcare</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <label for="country">Country:</label>
+        <select id="country">
+            <option value="">All</option>
+            <option value="United States of America">United States of America</option>
+            <option value="Canada">Canada</option>
+            <!-- Add more options as needed -->
+        </select>
+        
+        <label for="topic">Topic:</label>
+        <select id="topic">
+            <option value="">All</option>
+            <option value="gas">Gas</option>
+            <option value="oil">Oil</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <label for="region">region:</label>
+        <select id="region">
+            <option value="">All</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <label for="pestle">pestle:</label>
+        <select id="pestle">
+            <option value="">All</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <label for="source">source:</label>
+        <select id="source">
+            <option value="">All</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <label for="intensity">intensity:</label>
+        <select id="intensity">
+            <option value="">All</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <label for="likelihood">likelihood:</label>
+        <select id="likelihood">
+            <option value="">All</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <label for="relevance">relevance:</label>
+        <select id="relevance">
+            <option value="">All</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <label for="end_year">end_year:</label>
+        <select id="end_year">
+            <option value="">All</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <label for="start_year">start_year:</label>
+        <select id="start_year">
+            <option value="">All</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <button id="apply-filters">Apply Filters</button>
+    </div>
+    <canvas id="myChart"></canvas>
+    <!-- Include Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>
