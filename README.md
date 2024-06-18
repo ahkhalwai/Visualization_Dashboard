@@ -28,3 +28,8 @@ export FLASK_APP=app.py;
 export FLASK_ENV=development # enables debug mode
 flask run --reload
 ```
+
+## Output
+
+![Filter 1](images/1.png)
+![Filter 2](images/2.png)
