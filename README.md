@@ -33,3 +33,38 @@ flask run --reload
 
 ![Filter 1](images/1.png)
 ![Filter 2](images/2.png)
+
+
+## API Reference
+
+
+### Endpoints 
+
+#### GET /data
+
+- get the data.
+- Returns: whole data.
+- Sample: `curl -X GET http://127.0.0.1:5000/data`
+```
+[{
+    "added": "July, 03 2016 05:28:48", 
+    "country": "", 
+    "end_year": null, 
+    "id": 1000, 
+    "impact": "", 
+    "insight": "Greenhouse gas", 
+    "intensity": 2, 
+    "likelihood": 2, 
+    "pestle": "", 
+    "published": "July, 03 2016 00:00:00", 
+    "region": "World", 
+    "relevance": 1, 
+    "sector": "", 
+    "source": "Wikipedia", 
+    "start_year": "", 
+    "title": "Earth's surface temperature could exceed historical values as early as 2047.", 
+    "topic": "", 
+    "url": "https://en.wikipedia.org/wiki/Greenhouse_gas"
+  }]
+```
+
