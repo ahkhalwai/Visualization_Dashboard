@@ -9,7 +9,14 @@ source env/bin/activate
 ```
 ## Install Required
 ```
+Try:
+
 pip3 install -r requirements.txt
+
+Else: 
+
+python3 -m pip install -r requirements.txt
+
 ```
 ## Any update in CLF run this command after install
 ```
