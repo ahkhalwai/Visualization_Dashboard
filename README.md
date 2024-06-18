@@ -1,6 +1,6 @@
-## CMD change to folder location
+## CLI change to folder location
 
-cd /Users/musef/Udacity/Visualization_Dashboard
+cd /Users/user/Visualization_Dashboard
 
 ## Setup Environment
 
@@ -11,9 +11,7 @@ source env/bin/activate
 
 pip3 install -r requirements.txt
 
-pip3 install Flask Flask-SQLAlchemy
-pip3 install pandas
-pip3 install psycopg2-binary
+## Any update in CLF run this command after install
 
 pip3 freeze > requirements.txt
 
